@@ -1,3 +1,4 @@
+# IMPORT LIBRARY
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
@@ -6,11 +7,11 @@ import numpy as np
 st.title("Praktikum 8 Visualisasi Data ")
 st.subheader("Pie Chart & Area Chart")
 
-# Identitas Kelompok
-st.write("Kelompok 2:")
+# IDENTITAS KELOMPOK
 st.markdown("""
-- Faiz Abdullah Hanif Firmansyah - 0110222281
-- Jamilatun Khoerunnisa - 0110222254    
+Kelompok 1:
+- Jamilatun Khoerunnisa - 0110222254
+- Faiz Abdullah Hanif Firmansyah - 01102222
 - Alim Rifai - 0110122068
 """)
 
@@ -30,6 +31,7 @@ kategori = st.selectbox(
     ["Basic Chart", "Kustomisasi Grafik", "Multiple Chart"]
 )
 
+# Grafik Basic (Pie Chart dan Area Chart)
 # BASIC GRAFIK
 if kategori == "Basic Chart":
     st.subheader("Basic Pie Chart")
@@ -53,6 +55,8 @@ if kategori == "Basic Chart":
     ax2.set_ylabel("Units Sold")
     st.pyplot(fig2)
 
+
+# Grafik Kustomisasi (Pie Chart dan Area Chart)
 # KUSTOMISASI GRAFIK
 elif kategori == "Kustomisasi Grafik":
     st.subheader("Customized Pie Chart")
@@ -86,6 +90,7 @@ elif kategori == "Kustomisasi Grafik":
     ax4.grid(axis='y', linestyle='--', alpha=0.6)
     st.pyplot(fig4)
 
+# Grafik Multiple (Pie Chart dan Area Chart)
 # MULTIPLE CHART
 else:
     st.subheader("Multiple Pie Chart")
